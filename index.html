@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<title>kagiso's portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Open Sans", sans-serif
+  }
+
+  * {
+    box-sizing: border-box
+  }
+
+  .container {
+    width: 100%;
+    background-color: #ddd;
+  }
+
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  .html {
+    width: 50%;
+    background-color: #4CAF50;
+  }
+
+  .css {
+    width: 20%;
+    background-color: #2196F3;
+  }
+
+  .js {
+    width: 20%;
+    background-color: #f44336;
+  }
+
+  .php {
+    width: 6%;
+    background-color: #808080;
+  }
+</style>
+
+
+<body class="w3-theme-l5">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+          class="fa fa-home w3-margin-right"></i>Home</a>
+      <a href="https://github.com/kagiso101?tab=repositories"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="My GitHub"><i
+          class="fa fa-globe"></i></a>
+      <a href="https://www.instagram.com/kagiso.ha/"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Instagram"><i
+          style="font-size:20px" class="fa">&#xf16d;</i>
+        </i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXJSJMKLXkqWcBHQKnPzRFVXfvHMNLKWSkWKnhMJZNbnZgZpzvFRCwXxtHlwsvWCLDNWQ"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Gmail"><i
+          class="fa fa-google fa-2" aria-hidden="true"></i>
+        <a href="https://www.facebook.com/kagiso.hadebe.1?ref=bookmarks"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Facebook"><i
+            class="fa fa-facebook-square fa-3" aria-hidden="true"></i>
+          <a href="https://twitter.com/Kagiso_ha"
+            class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="twitter"><i
+              class="fa fa-twitter fa-2" aria-hidden="true"></i>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="">
+              <img src="kagiso.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+            </a>
+    </div>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="https://www.instagram.com/kagiso.ha/" class="w3-bar-item w3-button w3-padding-large">Instagram</a>
+    <a href="https://www.facebook.com/kagiso.hadebe.1?ref=bookmarks"
+      class="w3-bar-item w3-button w3-padding-large">Facebook</a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" class="w3-bar-item w3-button w3-padding-large">Gmail</a>
+    <a href="https://github.com/kagiso101" class="w3-bar-item w3-button w3-padding-large">GitHub</a>
+  </div>
+
+  <!-- Page Container -->
+  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column -->
+      <div class="w3-col m3">
+        <!-- Profile -->
+        <div class="w3-card w3-round w3-white">
+          <div class="w3-container">
+            <h4 style="font-family: cursive;" class="w3-center">Kagiso Hadebe</h4>
+            <p class="w3-center"><img src="kagiso.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
+            </p>
+            <hr>
+            <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i>Agile Web Developer</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Cape Town, SA</p>
+            <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> 21 December 2001</p>
+          </div>
+        </div>
+        <br>
+
+        <!-- Accordion -->
+        <div class="w3-card w3-round">
+          <div class="w3-white">
+            <div id="Demo1" class="w3-hide w3-container">
+              <p>Some text..</p>
+            </div>
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                class="fa fa-user fa-2" aria-hidden="true"></i> About Me</button>
+            <div id="Demo2" class="w3-hide w3-container">
+              <p>Hey there I see you've stumbled apon my page , pretty neat for a rookie huh? It'll get better with time
+                though. Well let me tell you abit about me. Where to start, right My name is Uyabongeka Kagiso Vuyani
+                Hadebe (yeah its along name honestly I think 3 names was way too much for one person to handle.) you can
+                call me Kagiso though or KG . I was born in the year 2001 on the 21st of December , Im Sagittarius not
+                really into all those star signs I just know my own just to answer when people as about it. So for the
+                first half of my life I lived in a small town called Harrismith found in the Free State, attened
+                Harrismith primary school from the years 2008 until 2012 after that I moved to Durban and thats where
+                the second half of my life took place. I attended grade 6-7 at Isipingo Beach Intermediate School, there
+                after completed high school at Isipingo Secondary School. I finished High school last year and well I
+                always knew school wasnt for me so thats why I kinda didnt bother applying at any university , all I
+                wanted to do was code. The idea of creating my own software and websites has always driven me and now Im
+                living the dream, I live in the city Ive always wanted to live in (Cape Town) and Im doing what I love.
+                What more could I ask for , currently studying at <a style="color: rgba(250, 50, 0, 0.473);"
+                  href="http://www.projectcodex.co/">Code X</a> Code X and Im living my best life!</p>
+            </div>
+            <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                class="fa fa-picture-o fa-2" aria-hidden="true"></i></i> My Photos</button>
+            <div id="Demo3" class="w3-hide w3-container">
+              <div class="w3-row-padding">
+                <br>
+                <div class="w3-half">
+                  <img src="kagiso.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="1.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="2.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="3.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="4.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="https://kagiso101.github.io/basic-webpage/3.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- Interests -->
+        <div class="w3-card w3-round w3-white w3-hide-small">
+          <div class="w3-container">
+            <p>Interests</p>
+            <p>
+              <span class="w3-tag w3-small w3-theme-d5">Anime</span>
+              <span class="w3-tag w3-small w3-theme-d4">Javascript</span>
+              <span class="w3-tag w3-small w3-theme-d3">Music</span>
+              <span class="w3-tag w3-small w3-theme-d2">Games</span>
+              <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+              <span class="w3-tag w3-small w3-theme-l1">Wrestling</span>
+              <span class="w3-tag w3-small w3-theme-l2">Food</span>
+              <span class="w3-tag w3-small w3-theme-l3">Design</span>
+              <span class="w3-tag w3-small w3-theme-l4">Art</span>
+              <span class="w3-tag w3-small w3-theme-l5">Reading</span>
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <!-- Alert Box -->
+        <div
+          class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+          </span>
+          <p><strong>FUN FACT!</strong></p>
+          <img src="lazy.jpg" alt="A lazy person">
+          <p>Lazy people actually think more.
+            A small 2016 study found that people who possess a strong need for cognition move around less than those who
+            avoid mentally taxing tasks. The not-so-scientific inference: Laying around a lot just might mean you're
+            brainier. .</p>
+        </div>
+
+        <div
+          class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+          </span>
+          <p><strong>CRAZY FACT</strong></p>
+          <img src="uni.jpg" alt="A unicorn">
+          <p><b>The unicorn is the national animal of Scotland.</b>
+            Yes, although it's a fabled creature, the national animal of Scotland is actually the mythical unicorn —
+            chosen because of its association with dominance and chivalry as well as purity and innocence in Celtic
+            mythology. BRB, moving to Scotland real quick..</p>
+        </div>
+
+        <!-- End Left Column -->
+      </div>
+
+      <!-- Middle Column -->
+      <div class="w3-col m7">
+
+        <div class="w3-row-padding">
+          <div class="w3-col m12">
+            <div class="w3-card w3-round w3-white">
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="programer.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+          <h4>Front End Projects</h4><br>
+          <div class="w3-row-padding" style="margin:0 -16px">
+          </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="basic-webpage.png" alt="A basic-webpage" style="width:20em">
+
+          <h4>Creating A Basic Webpage Using Grid CSS!</h4><br>
+          <hr class="w3-clear">
+          <p>So here is <a style="color: rgb(133, 81, 80);" href="https://kagiso101.github.io/basic-webpage/">a basic
+              webpage</a> I
+            created
+            using Html and simple grid , its a bit sloppy because it was my first time with the grid css but
+            Ive improved , well Id like to think so atleast .
+          </p>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="basic.png" alt="A Text page" style="width:20em">
+
+          <h4>Creating A Text Only Webpage</h4><br>
+          <hr class="w3-clear">
+          <p>this right here is <a style="color: rgb(133, 81, 80);" href="https://kagiso101.github.io/first-webpage/">my first ever
+              webpage</a>
+            again abit sloppy mostly because I had no Idea what I was doing , hopefully who ever sees it
+            will be understanding.
+
+          </p>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="command.png" alt="The Command line" style="width:20em">
+
+          <h4>Mastering The Command Line
+          </h4><br>
+          <hr class="w3-clear">
+          <p>
+            A command-line interface processes commands to a computer program in the form of lines of text. The program
+            which handles the interface is called a command-line interpreter or command-line processor
+          </p>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="git.png" alt="Git" style="width:20em">
+
+          <h4>Git Version Controle</h4><br>
+          <hr class="w3-clear">
+          <p>Git is a distributed version-control system for tracking changes in source code during software
+            development. It is designed for coordinating work among programmers, but it can be used to track
+            changes in any set of files. Its goals include speed, data integrity, and support for
+            distributed, non-linear workflows
+            <a style="color: rgb(133, 81, 80);" href="http://jlord.us/git-it/">git</a>
+          </p>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="dom.png" alt="DOM" style="width:20em">
+
+          <h4>Document Object Model</h4><br>
+          <hr class="w3-clear">
+          <p>The browser exposes the DOM (the Document Object Model) which allows you to create rich user
+            experiences in the browser using JavaScript.
+            DOM stands for Document Object Model, which is an Object tree for a webpage page (Document).
+            Every page loaded into a web browser has a DOM, which you can use to make it interactive with
+            JavaScript
+            <a style="color: rgb(133, 81, 80);" href="https://kagiso101.github.io/dom-intro/">my DOM</a>
+          </p>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="programer.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+          <h4>Back End Projects</h4><br>
+          <div class="w3-row-padding" style="margin:0 -16px">
+          </div>
+        </div>
+
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="tests.png" alt="unit tests" style="width:20em">
+
+          <h4>Creating Unit Tests</h4><br>
+          <hr class="w3-clear">
+          <p>In computer programming, unit testing is a software testing method by which individual units of
+            source code, sets of one or more computer program modules together with associated control data,
+            usage procedures, and operating procedures, are tested to determine whether they are fit for
+            use.
+            <a style="color: rgb(133, 81, 80);" href="https://kagiso101.github.io/bootcamp-tests/">my unit tests</a>
+          </p>
+        </div>
+
+
+        <!-- End Middle Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-col m2">
+        <div class="w3-card w3-round w3-white w3-center">
+        </div>
+        <br>
+
+        <div class="w3-card w3-round w3-white w3-padding-32 w3-center" style="padding: 1em;">
+          <p><i class="fa fa-bars fa-4" aria-hidden="true"></i></p>
+
+          <h1>My Skills</h1>
+
+          <p>HTML</p>
+          <div class="container">
+            <div class="skills html">50%</div>
+          </div>
+
+          <p>CSS</p>
+          <div class="container">
+            <div class="skills css">20%</div>
+          </div>
+
+          <p>JavaScript</p>
+          <div class="container">
+            <div class="skills js">20%</div>
+          </div>
+
+          <p>C++</p>
+          <div class="container">
+            <div class="skills php">6%</div>
+          </div>
+        </div>
+
+
+
+        <!-- End Right Column -->
+      </div>
+
+      <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+  </div>
+  <br>
+
+  <!-- Footer -->
+
+
+  <footer class="w3-container w3-theme-d5">
+    <p>A page by <a href="https://kagiso101.github.io/">Kagiso!</a></p>
+  </footer>
+
+  <script>
+    // Accordion
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+      } else {
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace(" w3-theme-d1", "");
+      }
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
